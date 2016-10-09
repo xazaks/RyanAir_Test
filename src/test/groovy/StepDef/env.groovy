@@ -1,4 +1,4 @@
-package StepDefinitions
+package StepDef
 
 import geb.Browser
 import geb.binding.BindingUpdater
@@ -9,8 +9,8 @@ import static cucumber.api.groovy.Hooks.Before
 
 Before() {
 
-    browser = new Browser()
-    bindingUpdater = new BindingUpdater(binding, browser)
+    def browser = new Browser()
+    def bindingUpdater = new BindingUpdater(binding, browser)
     bindingUpdater.initialize()
 }
 
